@@ -1,12 +1,35 @@
 *{
     box-sizing: inherit;
 }
+div{
+    margin-top: 0;
+}
+body {
+    font-family: "Open Sans",Sans-Serif;
+    font-size: 1em;
+    font-weight: 400;
+    line-height: 2;
+    text-shadow: 0 0 1px transparent;
+    -webkit-box-direction: normal;
+}
+article{
+    display: block;
+}
+a {
+    -webkit-transition: 200ms;
+    transition: all 200ms;
+    color: #e4ba16;
+    margin-top: 0;
+}
+main{
+    display: block;
+}
 .header{
     z-index: 301;
     display: block;
 }
 [data-menu-style="floating"] {
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     width: 100%;
@@ -112,10 +135,37 @@ header.header .header__logo___2909e img {
     height: 100%;
     margin: 0;
     padding: 0;
-    font-size: 0;
-    text-indent: -9999px;
-    cursor: pointer;
     overflow: hidden;
-    -webkit-appearance: none;
-    
+}
+.sign-in{
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+}
+.sign-in__container{
+    max-width: 100%;
+    position: relative;
+    width: 100%;
+    max-height: 100%;
+    margin: 0;
+    padding-right: 1rem;
+    padding-left: 1rem;
+}
+.sign-in__wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    -webkit-box-pack: center;
+    justify-content: center;
+}
+.sign-in__form{
+    position: relative;
+    width: 100%;
+    flex: 0 0 50%;
+    max-width: 50%;
+}
+.sign-in .page__heading{
+    margin-bottom: 2rem;
+    text-align: center;
+}
+h1[class*="__heading"], h2[class*="__heading"] {
+    font-size: 3rem;
 }
