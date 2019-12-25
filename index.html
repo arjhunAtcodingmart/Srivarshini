@@ -7,6 +7,7 @@
     <title>Document</title>
     <Link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/ddb9128605.js" crossorigin="anonymous"></script>
+
 </head>
 <body>
         <div id="skip-link">
@@ -35,7 +36,13 @@
                                      <a href="https://www.facebook.com/groups/1282717078530848/" target="_self">Student Forum</a>
                   </li>
                   <li class="header__nav-item header__nav-sign-in">
-                    <a href="index1.html">Student Login</a>
+                    <a href="signin.html">Student Login</a>
+                  </li>
+                <li class="image">
+                  <img src="/home/srivarshini/Desktop/pirple/propic.jpg" id="image"></img>
+                </li>
+                  <li id="list-email">
+                        
                   </li>
                   
                   
@@ -392,6 +399,14 @@
             </article>
           </div>
         </footer>
+
+        <script>
+            var email = window.localStorage.getItem('email');
+            console.log(email);
+            document.getElementById('list-email').innerHTML = email;
+            var image = window.localStorage.getItem('image');
+            document.getElementById('image').attributes.src = image;
+          </script>
        
 </body>
 </html>

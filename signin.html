@@ -4,8 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
-    <Link rel="stylesheet" href="style1.css">
+    <title>Sign in</title>
+    <Link rel="stylesheet" href="sign in.css">
+      <script src="Click.js"></script>
+      <script src="https://kit.fontawesome.com/ddb9128605.js" crossorigin="anonymous"></script>
 </head>
 <body>
      
@@ -44,7 +46,7 @@
             <div class="sign-in__wrapper">
               <a id="cst-v2-section-signin_form" style="opacity: 0; height: 0 !important; width: 0 !important; display: inline;"></a><article class="sign-in__form">
           <h1 class="page__heading">Welcome Back!</h1><h4 style="text-align: center">Don't have an account?<br><a href="https://pirple.thinkific.com/pages/membership">Click Here</a> to create one</h4>
-          <form id="sign_in_7ebb2effca" action="/users/sign_in" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="✓"><input type="hidden" name="authenticity_token" value="u83XCmhsRyiQwrR/uCbhCtMT7Fekr0fyfzDVVYCfLhRx4aSD6gFPmh2VPHI/dMXJk6QgVSquDBkAPZqMcFT0/g==">
+          <form id="sign_in_7ebb2effca" action="index.html" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="✓"><input type="hidden" name="authenticity_token" value="u83XCmhsRyiQwrR/uCbhCtMT7Fekr0fyfzDVVYCfLhRx4aSD6gFPmh2VPHI/dMXJk6QgVSquDBkAPZqMcFT0/g==">
           
           <div class="form__group">
             
@@ -70,7 +72,7 @@
             </a>
           </div>
           <div class="form__button-group">
-            <input type="submit" value="Sign in" class="button button-primary" id="sign-in">
+            <input type="submit" value="Sign in" class="button button-primary" id="sign-in" onclick="Click()">
           </div>
           </form>
           
@@ -85,21 +87,75 @@
             </p>           
               <ul class="remote-sign-in__vendor-list">
                 
-                  <li class="remote-sign-in__vendor-list-item"><a href="https://courses.thinkific.com/users/auth/linkedin?ss%5Breferral%5D=&amp;ss%5Buser_return_to%5D=&amp;ss%5Bvisitor_id%5D=380782393" class="button linkedin"><i class="fa fa-linkedin"></i></a></li>
+                  <li class="remote-sign-in__vendor-list-item"><a href="https://courses.thinkific.com/users/auth/linkedin?ss%5Breferral%5D=&amp;ss%5Buser_return_to%5D=&amp;ss%5Bvisitor_id%5D=380782393" class="button linkedin"><i class="fab fa-linkedin-in"></i></a>
+                  <li class="remote-sign-in__vendor-list-item"><a href="https://courses.thinkific.com/users/auth/facebook?ss%5Breferral%5D=&amp;ss%5Buser_return_to%5D=&amp;ss%5Bvisitor_id%5D=380782393" class="button facebook"><i class="fab fa-facebook-f"></i></a>
                 
-                  <li class="remote-sign-in__vendor-list-item"><a href="https://courses.thinkific.com/users/auth/facebook?ss%5Breferral%5D=&amp;ss%5Buser_return_to%5D=&amp;ss%5Bvisitor_id%5D=380782393" class="button facebook"><i class="fa fa-facebook"></i></a></li>
-                
-                  <li class="remote-sign-in__vendor-list-item"><a href="https://courses.thinkific.com/users/auth/google?ss%5Breferral%5D=&amp;ss%5Buser_return_to%5D=&amp;ss%5Bvisitor_id%5D=380782393" class="button google-plus"><i class="fa fa-google-plus"></i></a></li>
+                  <li class="remote-sign-in__vendor-list-item"><a href="https://courses.thinkific.com/users/auth/google?ss%5Breferral%5D=&amp;ss%5Buser_return_to%5D=&amp;ss%5Bvisitor_id%5D=380782393" class="button google-plus"><i class="fab fa-google-plus"></i></a></li>
               </ul>         
           </div>
        </article>
         <aside class="sign-in__sign-up">
-          <a href="https://pirple.thinkific.com/pages/membership">
+          <a href="signup.html" >
             Create a new account
           </a>
         </aside>
             </div>
           </div>   
         </main>
-</body>
+
+         
+        <footer class="footer hidden-print" data-preview-item="footer">
+          <div class="footer__container">
+            <article class="section__content">
+              <ul class="footer__nav-site">
+                
+                  <li class="footer__nav-item">
+                    <a href="https://pirple.thinkific.com/pages/terms" target="_self">Terms</a>
+                  </li>
+                
+                  <li class="footer__nav-item">
+                    <a href="mailto:hello@pirple.com" target="_blank">Contact</a>
+                  </li>
+                
+                  <li class="footer__nav-item">
+                    <a href="https://www.facebook.com/wearepirple" target="_blank">Facebook</a>
+                  </li>
+                
+                  <li class="footer__nav-item">
+                    <a href="https://www.instagram.com/wearepirple/" target="_blank">Instagram</a>
+                  </li>
+                
+                  <li class="footer__nav-item">
+                    <a href="https://twitter.com/wearepirple/" target="_blank">Twitter</a>
+                  </li>
+                
+                  <li class="footer__nav-item">
+                    <a href="https://www.youtube.com/pirple" target="_blank">Youtube</a>
+                  </li>
+                
+              </ul>
+              
+              
+              
+              
+              <span class="section__divide"></span>
+              
+                <aside class="footer__copyright">
+                  
+                    <img src="https://pegi.info/sites/default/files/styles/medium/public/2017-03/pegi16.png" alt="Pegi rating 16+" style="width: 50px"> Age rating: 16+ <br>
+        © Copyright Pirple 2018 
+        
+                  
+                </aside>
+              
+              
+                <aside class="footer__white-label">
+                  <a href="//www.thinkific.com/?utm_source=pirple&amp;utm_medium=powered-by&amp;utm_campaign=Referral" target="_blank" tabindex="-1">Powered By Thinkific</a>
+                </aside>
+              
+            </article>
+          </div>
+        </footer>
+      
+      </body>
 </html>
