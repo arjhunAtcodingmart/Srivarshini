@@ -1,161 +1,121 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Sign in</title>
-    <Link rel="stylesheet" href="sign in.css">
-      <script src="Click.js"></script>
-      <script src="https://kit.fontawesome.com/ddb9128605.js" crossorigin="anonymous"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Sign in</title>
+  <Link rel="stylesheet" href="sign in.css">
+
+  <script src="https://kit.fontawesome.com/ddb9128605.js" crossorigin="anonymous"></script>
 </head>
 <body>
-     
-        <header class="header" data-preview-item="header" data-menu-style="floating" data-menu-type="header__nav--overlay" style="background-color: rgb(255, 255, 255);">
-                <div class="header__container">
-                  <div class="header__wrapper">
-                    <section class="header__logo header__logo___2909e">
-                        <a href="https://pirple.thinkific.com/">
-                            <img src="https://s3.amazonaws.com/thinkific-import/116598/cYiInJ14QTexS1zdpeTV_logo5.png" alt="Pirple" title="Pirple" class="img-responsive">
-                        </a>
-                    </section>
-                    <nav class="header__nav hidden-print">
-                        <ul>
-                             <li class="header__nav-item">
-                                 <a href="/pages/courses" target="_self">Course List</a>
-                             </li>
-                             <li class="header__nav-item">
-                                 <a href="/pages/membership" target="_self">Pricing</a>
-                             </li>
-                             <li class="header__nav-item">
-                                     <a href="https://www.facebook.com/groups/1282717078530848/" target="_self">Student Forum</a>
-                  </li>
-                  <li class="header__nav-item header__nav-sign-in">
-                    <a href="/users/sign_in">Student Login</a>
-                  </li>
-                  
-                  
-                </ul>
-              </nav>
-                  </div>
-                </div>
-        </header>
-        
-        <main class="sign-in" id="main-content" role="main">
-          <div class="sign-in__container">
-            <div class="sign-in__wrapper">
-              <a id="cst-v2-section-signin_form" style="opacity: 0; height: 0 !important; width: 0 !important; display: inline;"></a><article class="sign-in__form">
+  <header class="header" data-preview-item="header" data-menu-style="floating" data-menu-type="header__nav--overlay" style="background-color: rgb(255, 255, 255);">
+    <div class="header__container">
+      <div class="header__wrapper">
+        <section class="header__logo">
+          <a href="https://pirple.thinkific.com/">
+            <img src="https://s3.amazonaws.com/thinkific-import/116598/cYiInJ14QTexS1zdpeTV_logo5.png" alt="Pirple" title="Pirple" class="img-responsive">
+          </a>
+        </section>
+        <nav class="header__nav hidden-print">
+          <ul>
+            <li class="header__nav-item">
+              <a href="/pages/courses" target="_self">Course List</a>
+            </li>
+            <li class="header__nav-item">
+              <a href="/pages/membership" target="_self">Pricing</a>
+            </li>
+            <li class="header__nav-item">
+              <a href="https://www.facebook.com/groups/1282717078530848/" target="_self">Student Forum</a>
+            </li>
+            <li class="header__nav-item">
+              <a href="/users/sign_in">Student Login</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+  <main class="sign-in" id="main-content" role="main">
+    <div class="sign-in__container">
+      <div class="sign-in__wrapper">
+        <a id="signin_form" style="opacity: 0; height: 0 !important; width: 0 !important; display: inline;"></a>
+        <article class="sign-in__form">
           <h1 class="page__heading">Welcome Back!</h1><h4 style="text-align: center">Don't have an account?<br><a href="https://pirple.thinkific.com/pages/membership">Click Here</a> to create one</h4>
-          <form id="sign_in_7ebb2effca" action="index.html" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="✓"><input type="hidden" name="authenticity_token" value="u83XCmhsRyiQwrR/uCbhCtMT7Fekr0fyfzDVVYCfLhRx4aSD6gFPmh2VPHI/dMXJk6QgVSquDBkAPZqMcFT0/g==">
-          
-          <div class="form__group">
-            
-            <label class="form__label">Email
-              <input type="email" id="user[email]" name="user[email]" value="" placeholder="Email" autocapitalize="off" autocomplete="off" autocorrect="off" spellcheck="false" autofocus="" required="" class="form__control" style="border-color: rgb(204, 204, 204);">
-            </label>
-          </div>
-          <div class="form__group">
-            
-            <label for="user[password]" class="form__label">Password
-              <input type="password" id="user[password]" name="user[password]" placeholder="Password" autocapitalize="off" autocomplete="off" autocorrect="off" spellcheck="false" required="" class="form__control" style="border-color: rgb(204, 204, 204);">
-            </label>
-          </div>
-          <div class="form__group form__remember-me">
-            
-            
-            <label for="user[remember_me]" class="form__label">
-              <input type="hidden" name="user[remember_me]" value="0">
-              <input type="checkbox" id="user[remember_me]" name="user[remember_me]" value="1" class="form__control" style="border-color: rgb(204, 204, 204);">
-              Remember me
-            </label>
-            <a href="/users/password/new" class="form__forgot-password">Forgot Password?
-            </a>
-          </div>
-          <div class="form__button-group">
-            <input type="submit" value="Sign in" class="button button-primary" id="sign-in" onclick="Click()">
-          </div>
-          </form>
-          
-        
-        
-          <div class="remote-sign-in__vendor-logins">
-            <p class="remote-sign-in__divider">
-              <span>Or sign in with</span>
-            </p>
-            <p class="remote-sign-up__divider">
-              <span>Or sign up with</span>
-            </p>           
-              <ul class="remote-sign-in__vendor-list">
-                
+            <div id="sign_in"  >
+              <div class="form__group">
+                <label class="form__label">Email
+                  <input type="email" id="user[email]" name="user[email]" value="" placeholder="Email" required="" class="form__control" style="border-color: rgb(204, 204, 204);">
+                </label>
+              </div>
+              <div class="form__group">
+                <label for="user[password]" class="form__label">Password
+                  <input type="password" id="user[password]" name="user[password]" placeholder="Password" required="" class="form__control" style="border-color: rgb(204, 204, 204);">
+                </label>
+              </div>
+              <div class="form__group">
+                <label for="user[remember_me]" class="form__label">
+                 <input type="hidden" name="user[remember_me]" value="0">
+                  <input type="checkbox" id="user[remember_me]" name="user[remember_me]" value="1" class="form__control" style="border-color: rgb(204, 204, 204);">
+                  Remember me
+                </label>
+                <a href="/users/password/new" class="form__forgot-password">Forgot Password?</a>
+              </div>
+              <div class="form__button-group">
+                <button onclick="clickThis()">Submit</button>
+              </div>
+            </div>
+            <div class="remote-sign-in__vendor-logins">
+              <p class="remote-sign-in__divider"><span>Or sign in with</span></p>
+              <p class="remote-sign-up__divider"><span>Or sign up with</span></p>           
+                <ul class="remote-sign-in__vendor-list">
                   <li class="remote-sign-in__vendor-list-item"><a href="https://courses.thinkific.com/users/auth/linkedin?ss%5Breferral%5D=&amp;ss%5Buser_return_to%5D=&amp;ss%5Bvisitor_id%5D=380782393" class="button linkedin"><i class="fab fa-linkedin-in"></i></a>
                   <li class="remote-sign-in__vendor-list-item"><a href="https://courses.thinkific.com/users/auth/facebook?ss%5Breferral%5D=&amp;ss%5Buser_return_to%5D=&amp;ss%5Bvisitor_id%5D=380782393" class="button facebook"><i class="fab fa-facebook-f"></i></a>
-                
                   <li class="remote-sign-in__vendor-list-item"><a href="https://courses.thinkific.com/users/auth/google?ss%5Breferral%5D=&amp;ss%5Buser_return_to%5D=&amp;ss%5Bvisitor_id%5D=380782393" class="button google-plus"><i class="fab fa-google-plus"></i></a></li>
-              </ul>         
-          </div>
-       </article>
-        <aside class="sign-in__sign-up">
-          <a href="signup.html" >
-            Create a new account
-          </a>
-        </aside>
+                </ul>         
             </div>
-          </div>   
-        </main>
-
-         
-        <footer class="footer hidden-print" data-preview-item="footer">
-          <div class="footer__container">
-            <article class="section__content">
-              <ul class="footer__nav-site">
-                
-                  <li class="footer__nav-item">
-                    <a href="https://pirple.thinkific.com/pages/terms" target="_self">Terms</a>
-                  </li>
-                
-                  <li class="footer__nav-item">
-                    <a href="mailto:hello@pirple.com" target="_blank">Contact</a>
-                  </li>
-                
-                  <li class="footer__nav-item">
-                    <a href="https://www.facebook.com/wearepirple" target="_blank">Facebook</a>
-                  </li>
-                
-                  <li class="footer__nav-item">
-                    <a href="https://www.instagram.com/wearepirple/" target="_blank">Instagram</a>
-                  </li>
-                
-                  <li class="footer__nav-item">
-                    <a href="https://twitter.com/wearepirple/" target="_blank">Twitter</a>
-                  </li>
-                
-                  <li class="footer__nav-item">
-                    <a href="https://www.youtube.com/pirple" target="_blank">Youtube</a>
-                  </li>
-                
-              </ul>
-              
-              
-              
-              
-              <span class="section__divide"></span>
-              
-                <aside class="footer__copyright">
-                  
-                    <img src="https://pegi.info/sites/default/files/styles/medium/public/2017-03/pegi16.png" alt="Pegi rating 16+" style="width: 50px"> Age rating: 16+ <br>
-        © Copyright Pirple 2018 
-        
-                  
-                </aside>
-              
-              
-                <aside class="footer__white-label">
-                  <a href="//www.thinkific.com/?utm_source=pirple&amp;utm_medium=powered-by&amp;utm_campaign=Referral" target="_blank" tabindex="-1">Powered By Thinkific</a>
-                </aside>
-              
-            </article>
-          </div>
-        </footer>
-      
-      </body>
+        </article>
+        <aside class="sign-in__sign-up">
+          <a href="signup.html" >Create a new account</a>
+        </aside>
+      </div>
+    </div>   
+  </main>
+  <footer class="footer hidden-print" data-preview-item="footer">
+    <div class="footer__container">
+      <article class="section__content">
+        <ul class="footer__nav-site">
+          <li class="footer__nav-item">
+            <a href="https://pirple.thinkific.com/pages/terms" target="_self">Terms</a>
+          </li>
+          <li class="footer__nav-item">
+            <a href="mailto:hello@pirple.com" target="_blank">Contact</a>
+          </li>
+          <li class="footer__nav-item">
+            <a href="https://www.facebook.com/wearepirple" target="_blank">Facebook</a>
+          </li>
+          <li class="footer__nav-item">
+            <a href="https://www.instagram.com/wearepirple/" target="_blank">Instagram</a>
+          </li>
+          <li class="footer__nav-item">
+            <a href="https://twitter.com/wearepirple/" target="_blank">Twitter</a>
+          </li>
+          <li class="footer__nav-item">
+            <a href="https://www.youtube.com/pirple" target="_blank">Youtube</a>
+          </li>
+        </ul>
+        <span class="section__divide"></span>
+        <aside class="footer__copyright">
+          <img src="https://pegi.info/sites/default/files/styles/medium/public/2017-03/pegi16.png" alt="Pegi rating 16+" style="width: 50px"> Age rating: 16+ <br>
+          © Copyright Pirple 2018 
+        </aside>
+        <aside class="footer__white-label">
+          <a href="//www.thinkific.com/?utm_source=pirple&amp;utm_medium=powered-by&amp;utm_campaign=Referral" target="_blank" tabindex="-1">Powered By Thinkific</a>
+        </aside>
+      </article>
+    </div>
+  </footer>
+  <script src="Click.js"></script>
+</body>
 </html>

@@ -7,406 +7,174 @@
     <title>Document</title>
     <Link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/ddb9128605.js" crossorigin="anonymous"></script>
-
 </head>
 <body>
-        <div id="skip-link">
-                <a href="#main-content" tabindex="0">Skip to main content</a>
+  <div id="skip-link">
+    <a href="#main-content" tabindex="0">Skip to main content</a>
+  </div>
+  <a id="section" style="opacity: 0; height: 0 !important; width: 0 !important; display: inline;">  </a>
+  <header class="header" data-preview-item="header" data-menu-style="floating" data-menu-type="header__nav--overlay" style="background-color: rgb(255, 255, 255);">
+    <div class="header__container">
+      <div class="header__wrapper">
+        <section class="header__logo">
+          <a href="https://pirple.thinkific.com/">
+            <img src="https://s3.amazonaws.com/thinkific-import/116598/cYiInJ14QTexS1zdpeTV_logo5.png" alt="Pirple" title="Pirple" class="img-responsive">
+          </a>
+        </section>
+        <nav class="header__nav hidden-print">
+          <ul>
+            <li class="header__nav-item">
+              <a href="courses.html" target="_self">Course List</a>
+            </li>
+            <li class="header__nav-item">
+              <a href="/pages/membership" target="_self">Pricing</a>
+            </li>
+            <li class="header__nav-item">
+              <a href="https://www.facebook.com/groups/1282717078530848/" target="_self">Student Forum</a>
+            </li>
+            <li class="header__nav-item header__nav-sign-in">
+              <a href="signin.html">Student Login</a>
+            </li>
+            <li class="header__nav-item">
+              <img src="/pirple/propic.jpg" id="image"></img>
+              <li class="header__nav-item" id="list-email">
+              </li>
+            </li>
+          </ul>
+        </nav>
+        <a class="header__mobile-button hidden-print" aria-expanded="true" tabindex="0">
+          <span class="header__mobile-button__toggle-icon">
+          <span>toggle menu</span>
+          </span>
+          <span class="header__mobile-button__label ">Menu</span>
+        </a>
+      </div>
+    </div>
+  </header>
+  <main class="home" id="main-content" role="main">
+    <a id="section" style="opacity: 0; height: 0 !important; width: 0 !important; display: inline;"> </a>
+    <section class="banner" data-preview-item="banner" style="padding-top: 67px;">
+      <div class="banner__container">
+        <div class="banner__wrapper">
+          <article class="section__content">
+            <header class="section__headings">
+              <h3 class="section__heading">Continuing Education for Software Engineers</h3>
+              <h4 class="section__subheading">
+              <span style="color: #4d4d4d; background-color: #fff; padding: 10px; line-height: 200%">We have classes on Python, Javascript, Node.js, C++, HTML &amp; CSS, Kotlin, Swift and more. </span></h4>     
+            </header>
+            <section class="section__button-group">
+              <a class="button button-primary" href="/pages/courses">Browse the Courses</a>
+              <a class="button button-secondary" href="/pages/membership">Become a Member</a>
+            </section>
+          </article>
         </div>
-        
-        <a id="cst-v2-section-page_header" style="opacity: 0; height: 0 !important; width: 0 !important; display: inline;"></a>
-        
-        <header class="header" data-preview-item="header" data-menu-style="floating" data-menu-type="header__nav--overlay" style="background-color: rgb(255, 255, 255);">
-                <div class="header__container">
-                  <div class="header__wrapper">
-                    <section class="header__logo header__logo___2909e">
-                        <a href="https://pirple.thinkific.com/">
-                            <img src="https://s3.amazonaws.com/thinkific-import/116598/cYiInJ14QTexS1zdpeTV_logo5.png" alt="Pirple" title="Pirple" class="img-responsive">
-                        </a>
-                    </section>
-                    <nav class="header__nav hidden-print">
-                        <ul>
-                             <li class="header__nav-item">
-                                 <a href="/pages/courses" target="_self">Course List</a>
-                             </li>
-                             <li class="header__nav-item">
-                                 <a href="/pages/membership" target="_self">Pricing</a>
-                             </li>
-                             <li class="header__nav-item">
-                                     <a href="https://www.facebook.com/groups/1282717078530848/" target="_self">Student Forum</a>
-                  </li>
-                  <li class="header__nav-item header__nav-sign-in">
-                    <a href="signin.html">Student Login</a>
-                  </li>
-                <li class="image">
-                  <img src="/home/srivarshini/Desktop/pirple/propic.jpg" id="image"></img>
-                </li>
-                  <li id="list-email">
-                        
-                  </li>
-                  
-                  
-                </ul>
-              </nav>
-              <a class="header__mobile-button hidden-print" aria-expanded="true" tabindex="0">
-                <span class="header__mobile-button__toggle-icon">
-                  <span>toggle menu</span>
-                </span>
-                <span class="header__mobile-button__label ">Menu</span>
-              </a>
-              
-                  </div>
-                </div>
-              </header>
-             
-             <script>
-                $(document).ready(function() {
-                  function dynamicHeaderHeight() {
-                    headerHeight = $header.outerHeight();
-                  }
-                
-                  var $adminBar = $('.admin-notice__bar'),
-                      $body = $('body.home-landing-page, body.course-landing-page, body.bundle-landing-page, body.page-template'),
-                      $header = $('.header'),
-                      $main = $('.home-landing-page main, .course-landing-page main, .bundle-landing-page main, .page-template main'),
-                      $dropdownToggle = $('.dropdown__toggle-button'),
-                      $mobileButton = $('.header__mobile-button'),
-                      $navigation = $('.header__nav');
-                
-                      dynamicHeaderHeight();
-                
-                  var adminBarHeight = $adminBar.outerHeight(),
-                      beforeHeaderHeight = $body.find('>div').nextUntil('.header').outerHeight(),
-                      headerTop = $header.offset().top,
-                      isMobile = window.matchMedia("only screen and (max-width: 767px)");
-                
-                  if(adminBarHeight != NaN) {
-                    $body.css({
-                      'margin-bottom': adminBarHeight
-                    });
-                  }
-                  $dropdownToggle.on('click keypress', function(e) {
-                    if (e.which === 13 || e.type === 'click') {
-                      e.preventDefault();
-                      e.stopPropagation();
-                      $('.dropdown').toggleClass('open');
-                    }
-                  });
-                  $mobileButton.on('click keypress', function(e) {
-                    if (e.which === 13 || e.type === 'click') {
-                      e.preventDefault();
-                      e.stopPropagation();
-                      $header.attr('data-menu', $header.attr('data-menu') == 'open' ? 'closed' : 'open');
-                      $mobileButton.toggleClass('open');
-                      $navigation.focus();
-                    }
-                  });
-                  
-                    $(window).bind('scroll', function (e) {
-                      if(!isMobile.matches) {
-                        if ($(window).scrollTop() > headerTop) {
-                          $adminBar.addClass('fixed');
-                          $header.addClass('fixed');
-                          if($header.data('menu-style') != 'floating') {
-                            $body.css({
-                              'padding-top': beforeHeaderHeight + headerHeight,
-                            });
-                          }
-                        }
-                        if ($(window).scrollTop() <= headerTop) {
-                          $adminBar.removeClass('fixed');
-                          if($header.data('menu-style') != 'floating') {
-                            $body.css({
-                              'padding-top': 0
-                            });
-                          }
-                          $header.removeClass('fixed');
-                        }
-                      }
-                      else {
-                        $header.removeClass('fixed');
-                      }
-                    });
-                  
-                  
-                    $main.find('section').eq(0).css({
-                      'padding-top': headerHeight
-                    });
-                  
-                  $(window).resize(function() {
-                    dynamicHeaderHeight();
-                    
-                      $main.find('section').eq(0).css({
-                        'padding-top': headerHeight
-                      });
-                    
-                  });
-                });
-                </script>
-
-
-                <main class="home" id="main-content" role="main">
-                  <a id="cst-v2-section-91e3d33646" style="opacity: 0; height: 0 !important; width: 0 !important; display: inline;">
-                  </a>
-                  <section class="banner section-background section-background-image section__content-alignment--center section-height__large banner___da387" data-preview-item="banner" style="padding-top: 67px;">
-                  <div class="banner__container">
-                    <div class="banner__wrapper">
-                      <article class="section__content section__content___da387">
-                        
-                  <header class="section__headings">
-                    
-                      <h3 class="section__heading section__heading___da387">Continuing Education for Software Engineers</h3>
-                    
-                    
-                      <h4 class="section__subheading section__heading-ornament section__subheading___da387 section__heading-ornament___da387">
-                        <span style="color: #4d4d4d; background-color: #fff; padding: 10px; line-height: 200%">We have classes on Python, Javascript, Node.js, C++, HTML &amp; CSS, Kotlin, Swift and more. </span></h4>
-                    
-                  </header>
-                
-                
-                        
-                          <section class="section__button-group section__button-group___da387">
-                            
-                              <a class="button button-primary" href="/pages/courses">Browse the Courses</a>
-                            
-                              <a class="button button-secondary" href="/pages/membership">Become a Member</a>
-                            
-                            
-                          </section>
-                        
-                      </article>
-                    </div>
-                  </div>
-                </section>
-                
-                
-                
-                
-                <a id="cst-v2-section-HkgbXD_JV" style="opacity: 0; height: 0 !important; width: 0 !important; display: inline;"></a><section class="showcase section-height__medium
-                
-                  section__heading-alignment--center
-                 showcase___7eb02" data-preview-item="showcase">
-                  <div class="showcase__container">
-                    
-                  <header class="section__headings section__headings___7eb02">
-                    
-                      <h3 class="section__heading">Join a global cohort of <b>10,000+ students</b>
-                </h3>
-                    
-                    
-                      <h4 class="section__subheading section__heading-ornament section__heading-ornament___7eb02">Students in our classes are Engineers at:</h4>
-                    
-                  </header>
-                
-                
-                    <article class="section__content">
-                      
-                        <ul class="showcase__list section__body owl-carousel off">
-                          
-                            <li class="showcase__list-item">
-                              <img src="https://s3.amazonaws.com/thinkific-import/116598/X0uRN1KQfiljue9yXqSy_DlwUdbbsRi2SsTnOKA6W_272px-Google_2015_logo.svg.png" alt="" title="" class="img-responsive">
-                            </li>
-                          
-                            <li class="showcase__list-item">
-                              <img src="https://s3.amazonaws.com/thinkific-import/116598/KFVvLq5QxG6Xt35oErP2_743px-SAP-Logo.svg.png" alt="" title="" class="img-responsive">
-                            </li>
-                          
-                            <li class="showcase__list-item">
-                              <img src="https://s3.amazonaws.com/thinkific-import/116598/NshcIgcAQSSdZS6cmX4V_microsoft-logo.png" alt="" title="" class="img-responsive">
-                            </li>
-                          
-                            <li class="showcase__list-item">
-                              <img src="https://s3.amazonaws.com/thinkific-import/116598/Naj0gqRhR8uaNYfBD4Hu_ibm-logo-png-transparent-background.png" alt="" title="" class="img-responsive">
-                            </li>
-                          
-                            <li class="showcase__list-item">
-                              <img src="https://s3.amazonaws.com/thinkific-import/116598/LStA9BqmQZVSqf9yuXVw_amazon-logo-transparent.png" alt="" title="" class="img-responsive">
-                            </li>
-                          
-                        </ul>
-                      </div>
-                    </article>
-                  
-                
-                <script>
-                $(window).load(function() {
-                  var isMobile = window.matchMedia("only screen and (max-width: 767px)"),
-                      logoCount = $('.showcase__list .showcase__list-item').length,
-                      $showcaseCarousel = $('.showcase__list').addClass('owl-carousel'),
-                      looped = (logoCount < 3) ? false : true,
-                      showcaseOwlOptions = {
-                        center: true,
-                        dots: true,
-                        loop: looped,
-                        margin: 0,
-                        nav: false,
-                        slideBy: 1,
-                        responsive: {
-                          0: {
-                            items: 1.5
-                          },
-                          500: {
-                            items: 3
-                          }
-                        }
-                      };
-                  if (isMobile.matches) {
-                    var showcaseOwlActive = $showcaseCarousel.owlCarousel(showcaseOwlOptions);
-                  } else {
-                    $showcaseCarousel.addClass('off');
-                  }
-                  $(window).resize(function() {
-                    if (isMobile.matches) {
-                      if ( $showcaseCarousel.hasClass('off') ) {
-                        var showcaseOwlActive = $showcaseCarousel.owlCarousel(showcaseOwlOptions);
-                        $showcaseCarousel.removeClass('off');
-                      }
-                    } else {
-                      if ( !$showcaseCarousel.hasClass('off') ) {
-                        $showcaseCarousel.addClass('off').trigger('destroy.owl.carousel');
-                        $showcaseCarousel.find('.owl-stage-outer').children(':eq(0)').unwrap();
-                      }
-                    }
-                  });
-                });
-                </script>
-                
-                
-                
-                
-                <a id="cst-v2-section-SJx3vzU37" style="opacity: 0; height: 0 !important; width: 0 !important; display: inline;"></a>
-                <section class="text-icon section-height__medium
-
-                section--stacked--top
-              
-              
-              
-              
-              
-                section__heading-alignment--center
-               text-icon___e6582" data-preview-item="text-icon">
-                <div class="text-icon__container">
-                  
-                <header class="section__headings section__headings___e6582">
-                  
-                    <h3 class="section__heading">The Pirple.com Difference</h3>
-                  
-                  
-                    <h4 class="section__subheading section__heading-ornament section__heading-ornament___e6582">What's the difference between taking a class here, vs somewhere else?</h4>
-              <p class="para" style="text-align: center;">Pirple is designed to be more like a real classroom environment. We emphasize homeworks, exams, interacting with your instructors, and working with classmates. Most other online-course providers just give you a bunch of videos to watch.&nbsp;</p>
-                  
-                </header>
-              
-              
-                  <article class="section__content">
-                    
-                      <ul class="text-icon__list section__body">
-                        
-                          <li class="text-icon__list-item">
-                            <i class="fa fa-certificate"></i>
-                            <h4>Certificates of<br>Completion</h4>
-                            <p>When you reach the end of the course, you'll receive a certificate. Our certificates are digital, shareable, independently-verifiable and blockchain-backed.</p>
-                          </li>
-                        
-                          <li class="text-icon__list-item">
-                            <i class="fa fa-users"></i>
-                            <h4>24/7 Student<br>Forum</h4>
-                            <p>Start any topic, and ask anything you want to know related to programming. Anytime!</p>
-                          </li>
-                        
-                          <li class="text-icon__list-item">
-                            <i class="fa fa-flag-o"></i>
-                            <h4>Graded<br>Quizzes</h4>
-                            <p>As you progress through the material, we'll stop and quiz you, a lot! This helps reinforce learning, and shows you if you missed anything important.</p>
-                          </li>
-                        
-                          <li class="text-icon__list-item">
-                            <i class="fa fa-home"></i>
-                            <h4>Graded<br>Homeworks</h4>
-                            <p>When it comes to coding, you don't really know it until you start doing it! Every class includes several homework assignments.</p>
-                          </li>
-                        
-                          <li class="text-icon__list-item">
-                            <i class="fa fa-code"></i>
-                            <h4>Graded<br>Projects</h4>
-                            <p>Building large projects helps you synthesize the chapter materials into one body of knowledge. So every one of our course includes large project assignments.</p>
-                          </li>
-                        
-                          <li class="text-icon__list-item">
-                            <i class="fa fa-pencil-square-o"></i>
-                            <h4>Graded Final<br>Exams</h4>
-                            <p>We focus our final exams on real-world experience. For every course, your final exam includes having to add code to real-world open source projects.</p>
-                          </li>
-                        
-                      </ul>
-                    
-                  </article>
-                </div>
-              </section>
-         </main>
-
-
-         
-         <footer class="footer hidden-print" data-preview-item="footer">
-          <div class="footer__container">
-            <article class="section__content">
-              <ul class="footer__nav-site">
-                
-                  <li class="footer__nav-item">
-                    <a href="https://pirple.thinkific.com/pages/terms" target="_self">Terms</a>
-                  </li>
-                
-                  <li class="footer__nav-item">
-                    <a href="mailto:hello@pirple.com" target="_blank">Contact</a>
-                  </li>
-                
-                  <li class="footer__nav-item">
-                    <a href="https://www.facebook.com/wearepirple" target="_blank">Facebook</a>
-                  </li>
-                
-                  <li class="footer__nav-item">
-                    <a href="https://www.instagram.com/wearepirple/" target="_blank">Instagram</a>
-                  </li>
-                
-                  <li class="footer__nav-item">
-                    <a href="https://twitter.com/wearepirple/" target="_blank">Twitter</a>
-                  </li>
-                
-                  <li class="footer__nav-item">
-                    <a href="https://www.youtube.com/pirple" target="_blank">Youtube</a>
-                  </li>
-                
-              </ul>
-              
-              
-              
-              
-              <span class="section__divide"></span>
-              
-                <aside class="footer__copyright">
-                  
-                    <img src="https://pegi.info/sites/default/files/styles/medium/public/2017-03/pegi16.png" alt="Pegi rating 16+" style="width: 50px"> Age rating: 16+ <br>
-        © Copyright Pirple 2018 
-        
-                  
-                </aside>
-              
-              
-                <aside class="footer__white-label">
-                  <a href="//www.thinkific.com/?utm_source=pirple&amp;utm_medium=powered-by&amp;utm_campaign=Referral" target="_blank" tabindex="-1">Powered By Thinkific</a>
-                </aside>
-              
-            </article>
+      </div>
+    </section>
+    <a id="section" style="opacity: 0; height: 0 !important; width: 0 !important; display: inline;"></a>
+    <section class="showcase" data-preview-item="showcase">
+      <div class="showcase__container">
+        <header class="section__headings">
+          <h3 class="section__heading">Join a global cohort of <b>10,000+ students</b></h3>
+          <h4 class="section__subheading">Students in our classes are Engineers at:</h4>
+        </header>
+        <article class="section__content">
+          <ul class="showcase__list">
+            <li class="showcase__list-item">
+              <img src="https://s3.amazonaws.com/thinkific-import/116598/X0uRN1KQfiljue9yXqSy_DlwUdbbsRi2SsTnOKA6W_272px-Google_2015_logo.svg.png" alt="" title="" class="img-responsive">
+            </li>
+            <li class="showcase__list-item">
+              <img src="https://s3.amazonaws.com/thinkific-import/116598/KFVvLq5QxG6Xt35oErP2_743px-SAP-Logo.svg.png" alt="" title="" class="img-responsive">
+            </li>
+            <li class="showcase__list-item">
+              <img src="https://s3.amazonaws.com/thinkific-import/116598/NshcIgcAQSSdZS6cmX4V_microsoft-logo.png" alt="" title="" class="img-responsive">
+            </li>
+            <li class="showcase__list-item">
+              <img src="https://s3.amazonaws.com/thinkific-import/116598/Naj0gqRhR8uaNYfBD4Hu_ibm-logo-png-transparent-background.png" alt="" title="" class="img-responsive">
+            </li>
+            <li class="showcase__list-item">
+              <img src="https://s3.amazonaws.com/thinkific-import/116598/LStA9BqmQZVSqf9yuXVw_amazon-logo-transparent.png" alt="" title="" class="img-responsive">
+            </li>
+          </ul>
           </div>
-        </footer>
-
-        <script>
-            var email = window.localStorage.getItem('email');
-            console.log(email);
-            document.getElementById('list-email').innerHTML = email;
-            var image = window.localStorage.getItem('image');
-            document.getElementById('image').attributes.src = image;
-          </script>
-       
+        </article>
+        <a id="section" style="opacity: 0; height: 0 !important; width: 0 !important; display: inline;"></a>
+    <section class="text-icon" data-preview-item="text-icon">
+      <div class="text-icon__container">
+        <header class="section__headings">
+          <h3 class="section__heading">The Pirple.com Difference</h3>
+          <h4 class="section__subheading">What's the difference between taking a class here, vs somewhere else?</h4>
+          <p class="para" style="text-align: center;">Pirple is designed to be more like a real classroom environment. We emphasize homeworks, exams, interacting with your instructors, and working with classmates. Most other online-course providers just give you a bunch of videos to watch.&nbsp;</p>
+        </header>
+        <article class="section__content">
+          <ul class="text-icon__list">
+            <li class="text-icon__list-item">
+              <i class="fa fa-certificate"></i>
+              <h4>Certificates of<br>Completion</h4>
+              <p>When you reach the end of the course, you'll receive a certificate. Our certificates are digital, shareable, independently-verifiable and blockchain-backed.</p>
+            </li>
+            <li class="text-icon__list-item">
+              <i class="fa fa-users"></i>
+              <h4>24/7 Student<br>Forum</h4>
+             <p>Start any topic, and ask anything you want to know related to programming. Anytime!</p>
+            </li>
+            <li class="text-icon__list-item">
+              <i class="fa fa-flag-o"></i>
+             <h4>Graded<br>Quizzes</h4>
+             <p>As you progress through the material, we'll stop and quiz you, a lot! This helps reinforce learning, and shows you if you missed anything important.</p>
+            </li>
+            <li class="text-icon__list-item">
+              <i class="fa fa-home"></i>
+              <h4>Graded<br>Homeworks</h4>
+              <p>When it comes to coding, you don't really know it until you start doing it! Every class includes several homework assignments.</p>
+            </li>
+            <li class="text-icon__list-item">
+              <i class="fa fa-code"></i>
+              <h4>Graded<br>Projects</h4>
+              <p>Building large projects helps you synthesize the chapter materials into one body of knowledge. So every one of our course includes large project assignments.</p>
+            </li>
+            <li class="text-icon__list-item">
+              <i class="fa fa-pencil-square-o"></i>
+              <h4>Graded Final<br>Exams</h4>
+              <p>We focus our final exams on real-world experience. For every course, your final exam includes having to add code to real-world open source projects.</p>
+            </li>
+          </ul>
+        </article>
+      </div>
+    </section>
+  </main>
+  <footer class="footer hidden-print" data-preview-item="footer">
+    <div class="footer__container">
+      <article class="section__content">
+        <ul class="footer__nav-site">
+          <li class="footer__nav-item">
+            <a href="https://pirple.thinkific.com/pages/terms" target="_self">Terms</a>
+          </li>
+          <li class="footer__nav-item">
+            <a href="mailto:hello@pirple.com" target="_blank">Contact</a>
+          </li>
+          <li class="footer__nav-item">
+            <a href="https://www.facebook.com/wearepirple" target="_blank">Facebook</a>
+          </li>
+          <li class="footer__nav-item">
+            <a href="https://www.instagram.com/wearepirple/" target="_blank">Instagram</a>
+          </li>
+          <li class="footer__nav-item">
+            <a href="https://twitter.com/wearepirple/" target="_blank">Twitter</a>
+          </li>
+          <li class="footer__nav-item">
+            <a href="https://www.youtube.com/pirple" target="_blank">Youtube</a>
+          </li>
+        </ul>
+        <span class="section__divide"></span>
+        <aside class="footer__copyright">
+          <img src="https://pegi.info/sites/default/files/styles/medium/public/2017-03/pegi16.png" alt="Pegi rating 16+" style="width: 50px"> Age rating: 16+ <br>
+          © Copyright Pirple 2018 
+        </aside>
+        <aside class="footer__white-label">
+          <a href="//www.thinkific.com/?utm_source=pirple&amp;utm_medium=powered-by&amp;utm_campaign=Referral" target="_blank" tabindex="-1">Powered By Thinkific</a>
+        </aside>
+      </article>
+    </div>
+  </footer>       
 </body>
 </html>
