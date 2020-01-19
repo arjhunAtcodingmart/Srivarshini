@@ -1,0 +1,86 @@
+#header ,#content, #contentc{
+    display: block;
+    width: 100%;
+    position: fixed;
+}
+#img{
+    height: 36px;
+    width: auto;
+    padding-top: 20px;
+    padding-left: 50px;
+    float: left;
+}
+.headnavbar{
+    display: block;
+    float: left;
+    line-height: 80px;
+    height: 80px;
+    margin: 0 0 0 1%;
+}
+.navlinks{
+    display: inline-block;
+    float: left;
+}
+.navcontent{
+    float: left;
+    border: hidden;
+    text-align: center;
+}
+.anavlink{
+    display: inline;
+}
+#navelement{
+    padding: 0 17px 28px 17px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 14px;
+    font-family: Whitney-SemiBold, Whitney;
+    color: #282C3F;
+    text-transform: uppercase;
+}
+.profileicon{
+    height: 36px;
+    width: auto;
+    padding-top: 20px;
+    padding-right: 20px;
+    float: right;
+}
+.submit img{
+    height: 40px;
+    width: auto;
+    padding-top: 20px;
+    float: left;
+    margin-left: 100px;
+}
+.search{
+    font-family: Whitney;
+    display: inline-block;
+    float: left;
+    font-size: 14px;
+    height: 20px;
+    line-height: 24px;
+    width: 25%;
+    color: #696E79;
+    box-sizing: content-box;
+    padding: 8px 10px 10px 10px;
+    margin-top: 20px;
+    
+    border: 1px solid #F5F5F6;
+    background: #F5F5F6;
+}
+.banner{
+    position: fixed;
+    top: 80px;
+    width: 100%;
+    z-index: 8;
+}
+.bannertext{
+    height: 32px;
+    background-color: #03A685;
+    color: white;
+    text-align: center;
+    padding: 7px 0;
+    font-size: 14px;
+    font-weight: 500;
+    box-sizing: border-box;
+}
